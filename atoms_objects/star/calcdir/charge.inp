@@ -1,0 +1,10 @@
+&INPUTPP
+  prefix='calc',
+  outdir='.',
+  plot_num=0,
+  spin_component=2,
+/
+&PLOT
+  iflag=3,
+  output_format=5,
+/

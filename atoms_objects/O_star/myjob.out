@@ -1,0 +1,15 @@
+Writing vib.eq.pckl
+Writing vib.48x-.pckl
+Writing vib.48x+.pckl
+Writing vib.48y-.pckl
+Writing vib.48y+.pckl
+Writing vib.48z-.pckl
+Writing vib.48z+.pckl
+---------------------
+  #    meV     cm^-1
+---------------------
+  0   29.3     236.0 
+  1   49.8     401.5 
+  2   79.8     643.3 
+---------------------
+Zero-point energy: 0.079 eV

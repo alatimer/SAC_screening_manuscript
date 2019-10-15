@@ -1,0 +1,4 @@
+#!/home/users/mtt013/sherpy02/bin/python
+####!/usr/bin/env python
+from ase.gui.ag import main
+main()

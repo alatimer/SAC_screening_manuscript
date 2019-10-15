@@ -1,27 +1,17 @@
 import sys
 import math
 import pickle
-sys.path.append('./src/')
-sys.path.append('./src/ase')
 
 import numpy as np
-from scipy.integrate import solve_ivp
-from scipy.optimize import broyden1,broyden2,Bounds,minimize
-from scipy.optimize import minimize
-from matplotlib import colors
 import matplotlib.pyplot as plt
-import matplotlib.cm as cmx
 from matplotlib import colors
 import matplotlib.cm as cmx
-import matplotlib.patches as patches
-from mpmath import *
+from mpmath import mpf,mp
 
-
+sys.path.append('./src/')
+sys.path.append('./src/ase')
 from ase.units import kB
 from delta import Reactant,Reaction
-
-
-import ase
 
 def reader(data_file,ftype='separate',from_nmat=False):
     """ Reads in all data points from data file provided
@@ -58,7 +48,7 @@ def reader(data_file,ftype='separate',from_nmat=False):
                     new_dict[surf][label]=energy
     return new_dict
 
-#setting conditions. Temperature can be changed, but pressures are not functional.
+#setting reaction conditions. Temperature can be changed, but pressures are not functional.
 annot_sites=True
 kB=0.0000862
 h=4.1356e-15

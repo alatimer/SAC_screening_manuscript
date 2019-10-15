@@ -11,7 +11,7 @@ from mpmath import mpf,mp
 sys.path.append('./src/')
 sys.path.append('./src/ase')
 from ase.units import kB
-from delta import Reactant,Reaction
+from Delta import Reactant,Reaction
 
 def reader(data_file,ftype='separate',from_nmat=False):
     """ Reads in all data points from data file provided
